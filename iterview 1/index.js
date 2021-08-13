@@ -38,3 +38,54 @@ const MosCitiesR=  (numCities) => {
   .map(city => city.name)
 }
 console.log(MosCitiesR(3))
+
+const numbers = [3,2,1]
+
+
+const goUp = arr => arr.sort((a,b)=> a - b )
+
+const burbleSort = (arr) => {
+for (let i = 0 ; i < arr.length; i++) {
+    for(let j = 0; j < arr.length -1-i; j++) {
+        console.log(arr, arr[j],arr[j + 1]);
+      if (arr[j] > arr[j + 1]) {
+          let temp = arr[j]
+          arr[j]= arr[j + 1]
+          arr[j+1]= temp
+
+      }
+    }
+}
+return arr
+}
+// console.log(burbleSort(numbers)
+
+const addUp = (n) => {
+//  let total = 0;
+//  for (let i = 0; i <= n; i++) {
+//      total += i
+//  }
+//  return total
+return n * (n + 1) /2
+}
+// console.log(addUp(6))
+
+// const  parr = 'Hola hola que tal bienvenidos  un dias  hoy vamos a resolver problemas'
+
+// const  normalize = word => word
+// let dict = {pal:'', number:0}
+// .toLowerCase()
+// .replace(/[.!,]/g,"")
+
+
+
+// // console.log(normalize(parr))
+// const countString = (s) => {
+//     let dict = {};
+//     const conteoChange = s.split(' ')
+//     for(let word of conteoChange){
+        
+//     }
+     
+// }
+// console.log(countString(parr))
