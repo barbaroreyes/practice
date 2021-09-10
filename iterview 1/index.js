@@ -89,3 +89,12 @@ return n * (n + 1) /2
      
 // }
 // console.log(countString(parr))
+
+const PrintPars  = (n) =>{
+  for (let i = 0 ; i <n ; i++){
+    for(let j = 0 ; j < n ; j++){
+      console.log(i,j)
+    }
+  }
+}
+PrintPars(10)
